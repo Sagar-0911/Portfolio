@@ -1,6 +1,7 @@
 let express = require('express');
 let app = express();
 let ejs = require('ejs');
+let mongoose = require('mongoose');
 const haikus = require('./haikus.json');
 const port = process.env.PORT || 3000;
 
@@ -12,3 +13,4 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port);
+
